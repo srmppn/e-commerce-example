@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Navbar } from "react-bootstrap";
+import ProductItem from "./components/product-item/ProductItem";
+import "./App.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      products: [
+        {
+          detail: "Wacoal Panty Set (3 ชิ้น) รูปแบบ Short รุ่น WU4M01 สีดำ-เบจ-ชมพู (BL-BE-CP)",
+          rate: 4,
+          price: 199,
+          province: "กรุงเทพมหานคร"
+        },
+        {
+          detail: "Wacoal Panty Set (3 ชิ้น) รูปแบบ Short รุ่น WU4M01 สีดำ-เบจ-ชมพู (BL-BE-CP)",
+          rate: 3,
+          price: 130,
+          province: "กรุงเทพมหานคร"
+        },
+        {
+          detail: "Wacoal Panty Set (3 ชิ้น) รูปแบบ Short รุ่น WU4M01 สีดำ-เบจ-ชมพู (BL-BE-CP)",
+          rate: 3,
+          price: 130,
+          province: "กรุงเทพมหานคร"
+        },
+        {
+          detail: "Wacoal Panty Set (3 ชิ้น) รูปแบบ Short รุ่น WU4M01 สีดำ-เบจ-ชมพู (BL-BE-CP)",
+          rate: 3,
+          price: 130,
+          province: "กรุงเทพมหานคร"
+        }
+      ],
+    };
+  }
+  productList = (products) => {
+    return products.map((product) => <ProductItem product={product} />);
+  };
+  render() {
+    return (
+      <div className="App">
+        <Navbar bg="dark" variant="dark">
+          <Navbar.Brand href="#home">E-commerce</Navbar.Brand>
+        </Navbar>
+        <div className="product-list-container">
+          {this.productList(this.state.products)}
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;

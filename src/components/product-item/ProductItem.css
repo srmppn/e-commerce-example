@@ -1,0 +1,21 @@
+.product-container {
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0 0.0625rem 0.125rem 0 rgba(0,0,0,.1);
+  width: 12rem;
+  margin: 0 7px;
+}
+.product-detail {
+  padding: 8px;
+  word-wrap: break-word;
+  font-size: 13px;
+}
+.product-schema {
+  display: flex;
+  justify-content: space-between;
+}
+.product-schema .product-price {
+  color: #de3435;
+  font-weight: bold;
+  font-size: 15px;
+}
