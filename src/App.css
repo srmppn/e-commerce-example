@@ -2,7 +2,6 @@
   background-color: #f3f3f3;
 }
 .product-list-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   padding: 30px;
 }

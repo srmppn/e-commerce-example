@@ -1,0 +1,19 @@
+.jumbotron{
+    height: 130px;
+    margin-bottom: 0;
+    padding: 1rem 0;
+    background-color: #343a40;
+}
+.breadcrumb {
+    margin: 0;
+    padding: 0 1rem;
+}
+.search-bar {
+    width: 450px !important;
+    margin-right: 0.5rem;
+    
+}
+.search-btn {
+    font-size: 1.3em;
+    cursor: pointer;
+}

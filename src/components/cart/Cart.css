@@ -1,0 +1,16 @@
+.product-cart-container {
+    position: fixed;
+    display: inline-block;
+    right: 30px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 5px 7px 0 rgba(0,0,0,.1);
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}

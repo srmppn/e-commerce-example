@@ -1,0 +1,8 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #343a40;
+    height: 150px;
+    padding: 15px;
+  }

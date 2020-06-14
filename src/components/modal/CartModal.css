@@ -1,0 +1,7 @@
+.product-list-view {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.remove-item-btn {
+  cursor: pointer;
+}

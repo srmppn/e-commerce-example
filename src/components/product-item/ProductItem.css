@@ -1,9 +1,11 @@
 .product-container {
+  display: inline-block;
   border-radius: 3px;
   background-color: white;
   box-shadow: 0 0.0625rem 0.125rem 0 rgba(0,0,0,.1);
   width: 12rem;
-  margin: 0 7px;
+  margin: 7px 7px;
+  cursor: pointer;
 }
 .product-detail {
   padding: 8px;
@@ -18,4 +20,8 @@
   color: #de3435;
   font-weight: bold;
   font-size: 15px;
+}
+img {
+  width: 12rem;
+  height: 200px;
 }

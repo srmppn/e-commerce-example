@@ -1,0 +1,10 @@
+.carousel {
+    height: 350px;
+}
+
+.carousel-inner img {
+    height: -webkit-fill-available;
+}
+.carousel-caption {
+    bottom: 50px;
+}
