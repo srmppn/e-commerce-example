@@ -9,19 +9,21 @@ import CartModal from "./components/modal/CartModal";
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { connect } from "react-redux";
+import LoginModal from "./components/modal/LoginModal";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      showCart: false
+      showCart: false,
+      showLogin: false
     };
   }
-  onCloseHandle = () => {
-    this.setState({showCart:false});
+  onCloseHandle = (target) => {
+    this.setState({[target]:false});
   }
-  onShowHandle = () => {
-    this.setState({showCart:true});
+  onShowHandle = (target) => {
+    this.setState({[target]:true});
   }
   productList = (products) => {
     return products.map((product,idx) => <ProductItem key={idx} product={product} />);
@@ -30,7 +32,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Header />
+          <Header handleShow={() => this.onShowHandle('showLogin')}/>
           <Route path="/">
             <Advertise />
             <div style={{margin: '0 auto', width: '87%'}}>
@@ -41,8 +43,9 @@ class App extends Component {
           </Route>
           <Route exact path="/product-view">
           </Route>
-          <Cart handleShow={this.onShowHandle}/>
-          <CartModal show={this.state.showCart} handleClose={this.onCloseHandle}/>
+          <Cart handleShow={() => this.onShowHandle('showCart')}/>
+          <CartModal show={this.state.showCart} handleClose={() => this.onCloseHandle('showCart')}/>
+          <LoginModal show={this.state.showLogin} handleClose={() => this.onCloseHandle('showLogin')}/>
           <Footer />
         </div>
       </BrowserRouter>
