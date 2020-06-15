@@ -41,6 +41,24 @@ const initState = {
       rate: 3,
       price: 130,
       province: "กรุงเทพมหานคร"
+    },
+    {
+      detail: "Wacoal Panty Set (3 ชิ้น) รูปแบบ Short รุ่น WU4M01 สีดำ-เบจ-ชมพู (BL-BE-CP)",
+      rate: 3,
+      price: 130,
+      province: "กรุงเทพมหานคร"
+    },
+    {
+      detail: "Wacoal Panty Set (3 ชิ้น) รูปแบบ Short รุ่น WU4M01 สีดำ-เบจ-ชมพู (BL-BE-CP)",
+      rate: 3,
+      price: 130,
+      province: "กรุงเทพมหานคร"
+    },
+    {
+      detail: "Wacoal Panty Set (3 ชิ้น) รูปแบบ Short รุ่น WU4M01 สีดำ-เบจ-ชมพู (BL-BE-CP)",
+      rate: 3,
+      price: 130,
+      province: "กรุงเทพมหานคร"
     }
   ]
 };

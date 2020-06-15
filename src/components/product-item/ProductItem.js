@@ -12,7 +12,7 @@ class ProductItem extends Component {
   render() {
     return (
       <div className="product-container">
-          <img src="https://cf.shopee.co.th/file/9ab89f657f9b27362f8ca82bd79a0f7f" />
+          <img src="https://cf.shopee.co.th/file/67dfe2731fac3a6382077a624603d38a" />
           <div className="product-detail">
             <span>
               {this.props.product.detail}

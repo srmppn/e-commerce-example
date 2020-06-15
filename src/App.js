@@ -31,11 +31,8 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Header />
-          <Route exact path="/">
+          <Route path="/">
             <Advertise />
-            <div style={{padding:'30px'}}>
-              <h3>สินค้าแนะนำ</h3>
-            </div>
             <div style={{margin: '0 auto', width: '87%'}}>
               <div className="product-list-container">
                 {this.productList(this.props.product)}
