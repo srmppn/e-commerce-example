@@ -30,19 +30,19 @@ class Header extends Component {
             <Form inline>
                 <FormControl type="text" placeholder="ค้นหาสินค้าและร้านค้า" className="search-bar"/>
                 <i style={{color:'white'}} className="fas fa-search search-btn"></i>
-                <NavDropdown variant="light" title="หมวดหมู่">
+                <NavDropdown title="หมวดหมู่">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown variant="light" title="ใหม่">
+                <NavDropdown title="ใหม่">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown variant="light" title="โปรโมชัน">
+                <NavDropdown title="โปรโมชัน">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown variant="light" title="จัดส่งฟรี">
+                <NavDropdown title="จัดส่งฟรี">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                 </NavDropdown>
